@@ -1,62 +1,266 @@
-/* CSS GOES HERE */
+/* BASE */
+:root{
+  --bg: #E1E6E1;         
+  --ink: #111;
+  --accent: #E63B2E;     
+  --link: #852C00;
+
+  --paper: #ffffff;       
+  --footer: #E63B2E;
+
+  --b1: #F7E9E4;
+  --b2: #F3D5CC;
+  --b3: #F0C1AF;
+  --b4: #EDAE93;
+  --b5: #EA9B77;
+  --b6: #E7885B;
+  --b7: #E57540;
+  --b8: #E26126;
+
+}
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-size: 16px;
 }
+
 body {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
 }
 
-a[href="about.html"] {
+/* LINKS AND BUTTONS */
 
-    color:green;
-    font-weight: bold;
-}
-
-div#wrapper {
-    background: coral;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-div.text-wrapper {
-font-family: Georgia, 'times new roman',serif;
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
-div p {
-    font-size: 18px;
+.primary-nav a,
+.footer-nav a {
+  display: inline-block;
+  border-bottom: 4px solid var(--accent);
+  padding-bottom: 2px;
 }
 
-ol li {
-
-    font-weight: bold;
+.primary-nav a:hover,
+.footer-nav a:hover {
+  border-bottom-width: 6px;
 }
 
-section {
-    padding: 60px 20px;
+#dark-mode-toggle {
+  font: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid var(--accent);
+  padding-bottom: 2px;
+  font-size: 54px;
+  letter-spacing: 0.5px;
 }
-section:nth-child(even) {
-    background-color: #f2f2f2;
+
+#dark-mode-toggle:hover {
+  border-bottom-width: 6px;
 }
-.container {
-    width: 100%;
-    max-width: 960px;
-    text-align: left;
-    margin: 0 auto;
+
+/* HEADER */
+
+.index-header {
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: center;
 }
-h1 {
-    font-size: 3em;
+
+.primary-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-section .gallery {
-    width: 100%;
+
+.primary-nav a {
+  font-size: 54px;
+  letter-spacing: 0.5px;
 }
-section .gallery img {
-    width: 32%;
+
+.site-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--accent);
 }
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+
+.semester-nav {
+  font-size: 14px;
+  color: var(--link);
 }
+
+.semester-nav a:hover {
+  color: var(--accent);
+text-decoration: underline;
+
+}
+
+.semester-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  text-decoration: underline;
+}
+
+/* SEMESTER SECTIONS */
+
+.semester-section {
+  max-width: 900px;
+}
+
+.semester-inner {
+  max-width: 900px;
+    padding: 24px;
+  background: var(--paper);
+}
+
+.semester-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.semester-row-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.semester-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--link);
+}
+
+.semester-dates {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--link);
+}
+
+.semester-classes-wrap {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--link);
+
+}
+
+.class-list {
+  list-style: none;
+  font-size: 14px;
+    font-weight: 600;
+  color: var(--list);
+}
+
+.semester-projects-wrap {
+  width: 100%;
+}
+
+.semester-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-inner {
+  display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-text {
+  flex: 1 1 60%;
+}
+
+.project-description {
+  margin: 0;
+  font-size: 14px;
+  color: var(--link);
+  max-width: 42ch;
+}
+
+
+.project-image {
+  flex: 0 0 42%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-image-inner {
+  width: 100%;
+  max-width: 320px;
+ border-radius: 2px;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.project-image-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--accent);
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+
+.footer-note {
+  font-size: 11px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+ 
+
+
+
+
+/* ABOUT */
+
+ /* HEADER*/
+ 
+
