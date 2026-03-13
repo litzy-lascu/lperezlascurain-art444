@@ -85,6 +85,21 @@ button:focus-visible {
  margin: 0 auto;
 }
 
+.semester-nav-wrap {
+  justify-self: end;
+}
+
+.name-header {
+  justify-self: end;
+  text-align: right;
+}
+
+.self-portrait img {
+  display: block;
+  width: 420px;
+  height: auto;
+}
+
 .primary-nav ul {
   margin: 0;
   padding: 0;

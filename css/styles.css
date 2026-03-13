@@ -66,6 +66,7 @@ button:focus-visible {
   padding-bottom: 2px;
   font-size: 54px;
   letter-spacing: 0.5px;
+  text-align: left;
 }
 
 #dark-mode-toggle:hover {
@@ -76,12 +77,29 @@ button:focus-visible {
 
 .index-header {
   padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
   gap: 28px;
-  align-items: flex-start;
-  justify-content: center;
+  align-items:end; 
+
+  max-width: 1100px;
+  margin: 0 auto;
 }
+.semester-nav-wrap {
+  justify-self: end;
+}
+
+.name-header {
+  justify-self: end;
+  text-align: right;
+}
+
+.self-portrait img {
+  display: block;
+  width: 250px;
+  height: auto;
+}
+
 
 .primary-nav ul {
   margin: 0;
@@ -124,11 +142,12 @@ text-decoration: underline;
 
 .semester-section {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .semester-inner {
   max-width: 900px;
-    padding: 24px;
+    padding: 38px;
   background: var(--paper);
 }
 
@@ -138,9 +157,10 @@ text-decoration: underline;
 }
 
 .semester-row-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
 .semester-title {
@@ -155,18 +175,25 @@ text-decoration: underline;
   color: var(--link);
 }
 
+.semester-header {
+  justify-self: start;
+}
+
+
 .semester-classes-wrap {
-  display: flex;
-  justify-content: flex-end;
+   display: block;
+   margin: 0;
   color: var(--link);
+
 
 }
 
 .class-list {
   list-style: none;
   font-size: 14px;
-    font-weight: 600;
+  font-weight: 600;
   color: var(--list);
+  padding-left: 0px;
 }
 
 .semester-projects-wrap {
@@ -180,32 +207,33 @@ text-decoration: underline;
 }
 
 .project-inner {
-  display: flex;
-    flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  align-items: start;
 }
 
-.project-text {
-  flex: 1 1 60%;
+.project-text, 
+.project-image {
+  flex: unset;
+}
+
+.project-image {
+  display: block;
 }
 
 .project-description {
   margin: 0;
   font-size: 14px;
   color: var(--link);
-  max-width: 42ch;
+  max-width: 38ch;
 }
 
 
-.project-image {
-  flex: 0 0 42%;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .project-image-inner {
   width: 100%;
-  max-width: 320px;
+  max-width: none;
  border-radius: 2px;
   overflow: hidden;
   min-height: 150px;
@@ -223,21 +251,30 @@ text-decoration: underline;
 .site-footer {
   background: var(--accent);
   color: #fff;
-  padding: 24px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 60px;
+  margin: 0 auto;
+  display: grid;
+   grid-template-rows: auto auto;
+  gap: 150px;
+  align-items:end; 
+  max-height: 1100px; 
 }
 
-.footer-left,
+.footer-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .footer-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .footer-nav ul {
   list-style: none;
+  padding: 0;
 }
 
 
@@ -248,6 +285,10 @@ text-decoration: underline;
 .contact-info a {
   color: #fff;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 
@@ -261,12 +302,62 @@ text-decoration: underline;
 
 /* ABOUT */
 
- /* HEADER*/
- 
+.about-header{
+  padding: 48px;
+}
 
-/* set div around image to 50%, set div around text to 50% set text itself to a max width, set a height for the images. 
+.about-nav a{
+  font-size: 16px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+    color: var(--accent);
+      text-decoration: underline;
 
-set the margins to 0 and auto for the white part to center align
+}
+.about-intro {
+    margin-bottom: 0px;
+}
 
-charge the text to black  */
 
+
+.about-title-wrap h1 {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  
+}
+
+.about-nav-list{
+  text-align:right;
+}
+
+#dark-mode-toggle-about {
+  font: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--accent);
+  padding-bottom: 2px;
+  text-align: right;
+  font-size: 16px;
+}
+
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  grid-template-rows: 1fr;
+  gap: 24px;
+}
+
+    .about-hero-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
