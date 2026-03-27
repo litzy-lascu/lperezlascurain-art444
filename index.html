@@ -12,6 +12,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=1">
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/indexscript.js" defer></script>
+
 
 </head>
 
@@ -39,804 +41,927 @@
       <nav>
         <div class="semester-nav">
           <ul>
-            <li><a href="#year1-01">Year 1 - 01</a></li>
-            <li><a href="#year1-02">Year 1 - 02</a></li>
-            <li><a href="#year2-01">Year 2 - 01</a></li>
-            <li><a href="#year2-02">Year 2 - 02</a></li>
-            <li><a href="#year3-01">Year 3 - 01</a></li>
-            <li><a href="#year3-02">Year 3 - 02</a></li>
-            <li><a href="#year4-01">Year 4 - 01</a></li>
-            <li><a href="#year4-02">Year 4 - 02</a></li>
-            </ul>
-            </div>
-            </nav>
-            </div>
-            <div class="name-header">
-            <div class="header-inner">
-              <h1 class="site-title">litzy perez lascurain.</h1>
-            </div>
-            <div class="self-portrait">
-              <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-            </div>
-            </div>
-            </header>
+            <li><a href="#tab-year1-01">Year 1 - 01</a></li>
+            <li><a href="#tab-year1-02">Year 1 - 02</a></li>
+            <li><a href="#tab-year2-01">Year 2 - 01</a></li>
+            <li><a href="#tab-year2-02">Year 2 - 02</a></li>
+            <li><a href="#tab-year3-01">Year 3 - 01</a></li>
+            <li><a href="#tab-year3-02">Year 3 - 02</a></li>
+            <li><a href="#tab-year4-01">Year 4 - 01</a></li>
+            <li><a href="#tab-year4-02">Year 4 - 02</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="name-header">
+      <div class="header-inner">
+        <h1 class="site-title">litzy perez lascurain.</h1>
+      </div>
+      <div class="self-portrait">
+        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+  <div class="mobile-sticky-nav" id="mobile-sticky-nav">
+  <div class="mobile-sticky-links">
+    <a href="#top">home.</a>
+    <a href="about.html">about.</a>
+    <button id="mobile-dark-toggle">dark.</button>
+  </div>
+
+  <button class="mobile-hamburger" id="mobile-hamburger" aria-expanded="false" aria-controls="mobile-semester-menu">
+    ☰
+  </button>
+
+  <nav class="mobile-semester-menu" id="mobile-semester-menu">
+    <ul>
+      <li><a href="#tab-year1-01">year 1 - 01</a></li>
+      <li><a href="#tab-year1-02">year 1 - 02</a></li>
+      <li><a href="#tab-year2-01">year 2 - 01</a></li>
+      <li><a href="#tab-year2-02">year 2 - 02</a></li>
+      <li><a href="#tab-year3-01">year 3 - 01</a></li>
+      <li><a href="#tab-year3-02">year 3 - 02</a></li>
+      <li><a href="#tab-year4-01">year 4 - 01</a></li>
+      <li><a href="#tab-year4-02">year 4 - 02</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- CLOSED TABS  -->
+
+
+
+
+
+
+
+
+
 
   <!-- FIRST SECTION 01/01-->
-  <section id="year1-01" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-          <header class="semester-header">
-            <h2 class="semester-title">Year 1 - 01</h2>
-            <p class="semester-dates">08/22/2022 - 12/16/2022</p>
-          </header>
-          <div class="semester-body">
 
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ANTH 101: Human Bio-Cultural Origin</li>
-                  <li>CCS 200: Intrmd Research & Writing</li>
-                  <li>HIST 109: American Hist to Reconstr</li>
-                  <li>MATH 110: Math for Life</li>
-                </ul>
+
+
+
+  <main class="semester-accordion has-open-panel">
+
+   <div class="accordion-intro">
+    <div class="accordion-intro-inner">
+      <p>
+        First paragraph goes here. This should be a narrow block of text.
+      </p>
+
+      <p>
+        Second paragraph goes here. This should also be narrow and right aligned.
+      </p>
+    </div>
+  </div>
+
+
+  
+    <section id="tab-year1-01" class="semester-panel" data-color="var(--b1)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 1 - 01</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year1-01">+</button>
+      </div>
+
+
+      <div id="year1-01" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+              <header class="semester-header">
+                <h2 class="semester-title">Year 1 - 01</h2>
+                <p class="semester-dates">08/22/2022 - 12/16/2022</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ANTH 101: Human Bio-Cultural Origin</li>
+                      <li>CCS 200: Intrmd Research & Writing</li>
+                      <li>HIST 109: American Hist to Reconstr</li>
+                      <li>MATH 110: Math for Life</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </article>
 
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </article>
+                </article>
 
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </article>
 
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SECOND SECTION 01/02-->
-  <section id="year1-02" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-          <header class="semester-header">
-            <h2 class="semester-title">Year 1 - 02</h2>
-            <p class="semester-dates">01/18/2023 - 05/11/2023</p>
-          </header>
-          <div class="semester-body">
-
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ART 258 Intro to Art History</li>
-                  <li>CCS 111A Oral Communication</li>
-                  <li>CCS 120B Chicana/o Role Pol System</li>
-                  <li>GEOG 101 Earth's Physical Envirnmt</li>
-                  <li>SOC 115 Body and Society</li>
-                </ul>
               </div>
             </div>
-          </div>
-        </div>
-
-
-
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
 
           </div>
         </div>
+    </section>
+
+    <!-- SECOND SECTION 01/02-->
+
+    <section id="tab-year1-02" class="semester-panel" data-color="var(--b2)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 1 - 02</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year1-02">+</button>
       </div>
-    </div>
-    </div>
-  </section>
 
-  <!-- THIRD SECTION 02/01-->
-  <section id="year2-01" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
 
-          <header class="semester-header">
-            <h2 class="semester-title">Year 2 - 01</h2>
-            <p class="semester-dates">08/21/2023 - 12/18/2023</p>
-          </header>
-          <div class="semester-body">
+      <div id="year1-02" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+              <header class="semester-header">
+                <h2 class="semester-title">Year 1 - 02</h2>
+                <p class="semester-dates">01/18/2023 - 05/11/2023</p>
+              </header>
+              <div class="semester-body">
 
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ART 100 Drawing I</li>
-                  <li>ECON 102 Principles of Economics</li>
-                  <li>PSFA 320 Creat and Commun in Arts</li>
-                  <li>REL S 411 Understanding Evil</li>
-                  <li>WMNST 325 Psychology of Women</li>
-                </ul>
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ART 258 Intro to Art History</li>
+                      <li>CCS 111A Oral Communication</li>
+                      <li>CCS 120B Chicana/o Role Pol System</li>
+                      <li>GEOG 101 Earth's Physical Envirnmt</li>
+                      <li>SOC 115 Body and Society</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
 
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
               </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- FOURTH SECTION 02/02-->
-  <section id="year2-02" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-
-          <header class="semester-header">
-            <h2 class="semester-title">Year 2 - 02</h2>
-            <p class="semester-dates">01/17/2024 - 05/09/2024</p>
-          </header>
-          <div class="semester-body">
-
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ART 103 Three Dimensional Design</li>
-                  <li>ART 241 Graphic Design I</li>
-                  <li>ART 242 Typography I</li>
-                  <li>GEOL 303 Natural Disasters</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- FIFTH SECTION 03/01-->
-  <section id="year3-01" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-          <header class="semester-header">
-            <h2 class="semester-title">Year 3 - 01</h2>
-            <p class="semester-dates">08/26/2024 - 12/17/2024</p>
-          </header>
-          <div class="semester-body">
-
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ART 104 Artists Dsgners Real Tim</li>
-                  <li>ART 231 Jewelry and Metals Ia</li>
-                  <li>ART 340 Digital Photography I</li>
-                  <li>ART 342A Typography II</li>
-                  <li>GEOG 101L Earth's Phys Envirnmt Lab</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- SIXTH SECTION 03/02-->
-  <section id="year3-02" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-          <header class="semester-header">
-            <h2 class="semester-title">Year 3 - 02</h2>
-            <p class="semester-dates">01/21/2025 - 05/14/2025</p>
-          </header>
-          <div class="semester-body">
-
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ACCTG 201 Financial Accounting Fund</li>
-                  <li>ART 240 Digital Media</li>
-                  <li>ART 344 Design for the Internet I</li>
-                  <li>ART 571B Contemp Art of Latin Amer</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- SEVENTH SECTION 04/01-->
-  <section id="year4-01" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header">
-          <header class="semester-header">
-            <h2 class="semester-title">Year 4 - 01</h2>
-            <p class="semester-dates">08/25/2025 - 12/18/2025</p>
-          </header>
-          <div class="semester-body">
-
-            <div class="semester-classes-wrap">
-              <div class="semester-classes">
-                <ul class="class-list">
-                  <li>ART 345 History of Graphic Design</li>
-                  <li>ART 448 Sequential Media</li>
-                  <li>JMS 210 Digital Literacy</li>
-                  <li>JMS 460 Principles of Advertising</li>
-                  <li>JMS 494 Media, Law and Ethics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="semester-projects-wrap">
-          <div class="semester-projects">
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="project">
-              <div class="project-inner">
-                <div class="project-text">
-                  <div class="project-desc">
-                    <p class="project-description">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                      pellentesque
-                      sem
-                      placerat.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="project-image">
-                  <div class="project-image-inner">
-                    <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- EIGHTH SECTION 04/02-->
-  <section id="year4-02" class="semester-section">
-    <div class="semester-inner">
-      <div class="semester-container">
-        <div class="semester-row-header"></div>
-        <header class="semester-header">
-          <h2 class="semester-title">Year 4 - 02</h2>
-          <p class="semester-dates">01/20/2026 - 05/13/2026</p>
-        </header>
-        <div class="semester-body">
-
-          <div class="semester-classes-wrap">
-            <div class="semester-classes">
-              <ul class="class-list">
-                <li>ART 348 Three-D Digital Media</li>
-                <li>ART 444 Design for Internet II</li>
-                <li>ART 555 UX/UI Design</li>
-                <li>ART 570 African American Art</li>
-                <li>JMS 408 Principles of Media Studies</li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="semester-projects-wrap">
-        <div class="semester-projects">
-          <article class="project">
-            <div class="project-inner">
-              <div class="project-text">
-                <div class="project-desc">
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                    pellentesque
-                    sem
-                    placerat.
-                  </p>
-                </div>
-              </div>
+    <!-- THIRD SECTION 02/01-->
 
-              <div class="project-image">
-                <div class="project-image-inner">
-                  <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                </div>
-              </div>
-            </div>
-          </article>
+    <section id="tab-year2-01" class="semester-panel" data-color="var(--b3)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 2 - 01</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year2-01">+</button>
+      </div>
 
-          <article class="project">
-            <div class="project-inner">
-              <div class="project-text">
-                <div class="project-desc">
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                    pellentesque
-                    sem
-                    placerat.
-                  </p>
-                </div>
-              </div>
 
-              <div class="project-image">
-                <div class="project-image-inner">
-                  <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+      <div id="year2-01" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+
+              <header class="semester-header">
+                <h2 class="semester-title">Year 2 - 01</h2>
+                <p class="semester-dates">08/21/2023 - 12/18/2023</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ART 100 Drawing I</li>
+                      <li>ECON 102 Principles of Economics</li>
+                      <li>PSFA 320 Creat and Commun in Arts</li>
+                      <li>REL S 411 Understanding Evil</li>
+                      <li>WMNST 325 Psychology of Women</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </article>
 
-          <article class="project">
-            <div class="project-inner">
-              <div class="project-text">
-                <div class="project-desc">
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
-                    pellentesque
-                    sem
-                    placerat.
-                  </p>
-                </div>
-              </div>
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
 
-              <div class="project-image">
-                <div class="project-image-inner">
-                  <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
-                </div>
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
               </div>
             </div>
-          </article>
-
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- FOURTH SECTION 02/02-->
+
+    <section id="tab-year2-02" class="semester-panel" data-color="var(--b4)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 2 - 02</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year2-02">+</button>
+      </div>
+
+
+      <div id="year2-02" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+
+              <header class="semester-header">
+                <h2 class="semester-title">Year 2 - 02</h2>
+                <p class="semester-dates">01/17/2024 - 05/09/2024</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ART 103 Three Dimensional Design</li>
+                      <li>ART 241 Graphic Design I</li>
+                      <li>ART 242 Typography I</li>
+                      <li>GEOL 303 Natural Disasters</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIFTH SECTION 03/01-->
+    <section id="tab-year3-01" class="semester-panel" data-color="var(--b5)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 3 - 01</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year3-01">+</button>
+      </div>
+
+
+      <div id="year3-01" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+              <header class="semester-header">
+                <h2 class="semester-title">Year 3 - 01</h2>
+                <p class="semester-dates">08/26/2024 - 12/17/2024</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ART 104 Artists Dsgners Real Tim</li>
+                      <li>ART 231 Jewelry and Metals Ia</li>
+                      <li>ART 340 Digital Photography I</li>
+                      <li>ART 342A Typography II</li>
+                      <li>GEOG 101L Earth's Phys Envirnmt Lab</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIXTH SECTION 03/02-->
+    <section id="tab-year3-02" class="semester-panel" data-color="var(--b6)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 3 - 02</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year3-02">+</button>
+      </div>
+
+
+      <div id="year3-02" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+              <header class="semester-header">
+                <h2 class="semester-title">Year 3 - 02</h2>
+                <p class="semester-dates">01/21/2025 - 05/14/2025</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ACCTG 201 Financial Accounting Fund</li>
+                      <li>ART 240 Digital Media</li>
+                      <li>ART 344 Design for the Internet I</li>
+                      <li>ART 571B Contemp Art of Latin Amer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEVENTH SECTION 04/01-->
+    <section id="tab-year4-01" class="semester-panel" data-color="var(--b7)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 4 - 01</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year4-01">+</button>
+      </div>
+
+
+      <div id="year4-01" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header">
+              <header class="semester-header">
+                <h2 class="semester-title">Year 4 - 01</h2>
+                <p class="semester-dates">08/25/2025 - 12/18/2025</p>
+              </header>
+              <div class="semester-body">
+
+                <div class="semester-classes-wrap">
+                  <div class="semester-classes">
+                    <ul class="class-list">
+                      <li>ART 345 History of Graphic Design</li>
+                      <li>ART 448 Sequential Media</li>
+                      <li>JMS 210 Digital Literacy</li>
+                      <li>JMS 460 Principles of Advertising</li>
+                      <li>JMS 494 Media, Law and Ethics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="semester-projects-wrap">
+              <div class="semester-projects">
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <div class="project-inner">
+                    <div class="project-text">
+                      <div class="project-desc">
+                        <p class="project-description">
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                          pellentesque
+                          sem
+                          placerat.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-image">
+                      <div class="project-image-inner">
+                        <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EIGHTH SECTION 04/02-->
+    <section id="tab-year4-02" class="semester-panel" data-color="var(--b8)">
+      <div class="semester-tab">
+        <h2 class="semester-tab-title">Year 4 - 02</h2>
+        <button class="semester-toggle" aria-expanded="false" aria-controls="year4-02">+</button>
+      </div>
+
+
+      <div id="year4-02" class="semester-section">
+        <div class="semester-inner">
+          <div class="semester-container">
+            <div class="semester-row-header"></div>
+            <header class="semester-header">
+              <h2 class="semester-title">Year 4 - 02</h2>
+              <p class="semester-dates">01/20/2026 - 05/13/2026</p>
+            </header>
+            <div class="semester-body">
+
+              <div class="semester-classes-wrap">
+                <div class="semester-classes">
+                  <ul class="class-list">
+                    <li>ART 348 Three-D Digital Media</li>
+                    <li>ART 444 Design for Internet II</li>
+                    <li>ART 555 UX/UI Design</li>
+                    <li>ART 570 African American Art</li>
+                    <li>JMS 408 Principles of Media Studies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="semester-projects-wrap">
+            <div class="semester-projects">
+              <article class="project">
+                <div class="project-inner">
+                  <div class="project-text">
+                    <div class="project-desc">
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                        pellentesque
+                        sem
+                        placerat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="project-image">
+                    <div class="project-image-inner">
+                      <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project">
+                <div class="project-inner">
+                  <div class="project-text">
+                    <div class="project-desc">
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                        pellentesque
+                        sem
+                        placerat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="project-image">
+                    <div class="project-image-inner">
+                      <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project">
+                <div class="project-inner">
+                  <div class="project-text">
+                    <div class="project-desc">
+                      <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                        pellentesque
+                        sem
+                        placerat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="project-image">
+                    <div class="project-image-inner">
+                      <img src="images/placeholder.jpg" alt="Placeholder image" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER SECTION -->
   <footer class="site-footer">
@@ -860,8 +985,3 @@
     </div>
 
   </footer>
-
-  <script src="js/script.js"></script>
-</body>
-
-</html>
