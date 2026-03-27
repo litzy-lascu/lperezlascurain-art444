@@ -73,6 +73,18 @@ button:focus-visible {
   border-bottom-width: 6px;
 }
 
+
+/* MOBILE STICKY NAV */
+
+.mobile-sticky-nav {
+  display: none;
+}
+.about-mobile-sticky-nav {
+  display: none;
+}
+
+
+
 /* HEADER */
 
 .index-header {
@@ -138,12 +150,118 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
-/* SEMESTER SECTIONS */
+
+/* CLOSED TABS */
+
+.accordion-intro {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: var(--paper);
+}
+
+.accordion-intro-inner {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  text-align: right;
+}
+
+.accordion-intro-inner p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--link);
+}
+
+.semester-accordion {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 0;
+  min-height: 600px;
+}
+
+.semester-accordion.has-open-panel .accordion-intro {
+  display: none;
+}
+
+.semester-panel {
+  display: flex;
+  align-items: stretch;
+  flex: 0 0 auto;
+}
+
+.semester-tab {
+  width: 78px;
+  min-height: 600px;
+  background: var(--b1);
+  border-right: 1px solid rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.semester-tab-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--ink);
+}
+
+.semester-toggle {
+  font: inherit;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  padding: 0;
+}
 
 .semester-section {
-  max-width: 900px;
-  margin: 0 auto;
+  display: none;
+  width: 0;
+  overflow: hidden;
+  background: var(--paper);
+
 }
+
+.semester-panel.open .semester-section {
+  display: block;
+  width: 820px;
+}
+
+.semester-panel:nth-child(1) .semester-tab { background: var(--b1); }
+.semester-panel:nth-child(2) .semester-tab { background: var(--b2); }
+.semester-panel:nth-child(3) .semester-tab { background: var(--b3); }
+.semester-panel:nth-child(4) .semester-tab { background: var(--b4); }
+.semester-panel:nth-child(5) .semester-tab { background: var(--b5); }
+.semester-panel:nth-child(6) .semester-tab { background: var(--b6); }
+.semester-panel:nth-child(7) .semester-tab { background: var(--b7); }
+.semester-panel:nth-child(8) .semester-tab { background: var(--b8); }
+
+
+
+
+
+
+
+
+/* SEMESTER SECTIONS */
+
+
+
 
 .semester-inner {
   max-width: 900px;
@@ -192,7 +310,7 @@ text-decoration: underline;
   list-style: none;
   font-size: 14px;
   font-weight: 600;
-  color: var(--list);
+  color: var(--link);
   padding-left: 0px;
 }
 
@@ -361,4 +479,7 @@ li {
         flex-direction: column;
         justify-content: flex-end;
     }
-    testing
+
+
+
+    
