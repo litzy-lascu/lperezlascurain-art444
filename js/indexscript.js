@@ -4,6 +4,8 @@ const semesterPanels = document.querySelectorAll(".semester-panel");
 const semesterLinks = document.querySelectorAll(".semester-nav a");
 
 function updateAccordionState() {
+  if (!accordion) return;
+
   const hasOpenPanel = document.querySelector(".semester-panel.open");
 
   if (hasOpenPanel) {
@@ -74,9 +76,21 @@ semesterLinks.forEach(link => {
 
 const mobileStickyNav = document.getElementById("mobile-sticky-nav");
 const siteHeader = document.querySelector(".index-header");
+const mobileHamburger = document.getElementById("mobile-hamburger");
+const mobileSemesterLinks = document.querySelectorAll(".mobile-semester-menu a");
 
 function handleStickyNav() {
-  if (window.innerWidth > 478) return;
+  if (!mobileStickyNav || !siteHeader) return;
+
+  if (window.innerWidth > 478) {
+    mobileStickyNav.classList.remove("visible");
+    mobileStickyNav.classList.remove("menu-open");
+
+    if (mobileHamburger) {
+      mobileHamburger.setAttribute("aria-expanded", "false");
+    }
+    return;
+  }
 
   const headerBottom = siteHeader.offsetTop + siteHeader.offsetHeight;
   const scrolledPastHeader = window.scrollY > headerBottom;
@@ -86,17 +100,16 @@ function handleStickyNav() {
   } else {
     mobileStickyNav.classList.remove("visible");
     mobileStickyNav.classList.remove("menu-open");
+
+    if (mobileHamburger) {
+      mobileHamburger.setAttribute("aria-expanded", "false");
+    }
   }
 }
 
-window.addEventListener("scroll", handleStickyNav);
-window.addEventListener("resize", handleStickyNav);
-
-
-
-const mobileHamburger = document.getElementById("mobile-hamburger");
-
 function toggleMobileMenu() {
+  if (!mobileStickyNav || !mobileHamburger) return;
+
   const isOpen = mobileStickyNav.classList.contains("menu-open");
 
   if (isOpen) {
@@ -108,27 +121,49 @@ function toggleMobileMenu() {
   }
 }
 
-mobileHamburger.addEventListener("click", toggleMobileMenu);
+if (mobileStickyNav && siteHeader) {
+  window.addEventListener("scroll", handleStickyNav);
+  window.addEventListener("resize", handleStickyNav);
+  handleStickyNav();
+}
 
+if (mobileHamburger) {
+  mobileHamburger.addEventListener("click", event => {
+    event.stopPropagation();
+    toggleMobileMenu();
+  });
+}
 
-document.addEventListener("click", event => {
-  const clickedInsideNav = mobileStickyNav.contains(event.target);
+if (mobileStickyNav && mobileHamburger) {
+  document.addEventListener("click", event => {
+    const clickedInsideNav = mobileStickyNav.contains(event.target);
 
-  if (!clickedInsideNav) {
-    mobileStickyNav.classList.remove("menu-open");
-    mobileHamburger.setAttribute("aria-expanded", "false");
-  }
-});
-
-const mobileSemesterLinks = document.querySelectorAll(".mobile-semester-menu a");
+    if (!clickedInsideNav) {
+      mobileStickyNav.classList.remove("menu-open");
+      mobileHamburger.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
 mobileSemesterLinks.forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+
+    const targetId = link.getAttribute("href").replace("#", "");
+    const targetPanel = document.getElementById(targetId);
+
+    if (!targetPanel) return;
+
+    openPanel(targetPanel);
+
     mobileStickyNav.classList.remove("menu-open");
     mobileHamburger.setAttribute("aria-expanded", "false");
+
+    targetPanel.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   });
 });
-
-
 
 updateAccordionState();
