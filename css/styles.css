@@ -8,17 +8,37 @@
   --paper: #ffffff;       
   --footer: #E63B2E;
 
-  --b1: #F7E9E4;
-  --b2: #F3D5CC;
-  --b3: #F0C1AF;
-  --b4: #EDAE93;
-  --b5: #EA9B77;
-  --b6: #E7885B;
-  --b7: #E57540;
-  --b8: #E26126;
+  --b1: #FFEEE6;
+  --b2: #FFDDCC;
+  --b3: #FFCCB3;
+  --b4: #FFBB99;
+  --b5: #FFAA80;
+  --b6: #FF9966;
+  --b7: #FF884D;
+  --b8: #FF7733;
 
 }
 
+html[data-theme="dark"] {
+
+
+   --bg: #0f0f0f;         
+  --ink: #E1E6E1;
+  --accent: #E63B2E;     
+  --link: #FF7733;
+
+  --paper: #1A1A1A;       
+  --footer: #953200;
+  --b1: #35201E; 
+  --b2: #502622; 
+  --b3: #6B2C26; 
+  --b4: #86322A; 
+  --b5: #A1382E; 
+  --b6: #BC3E32; 
+  --b7: #D74436; 
+  --b8: #E63B2E; 
+
+}
 html {
   font-family: "Roboto Mono", 'Courier New', Courier, monospace;
   font-size: 16px;
@@ -67,6 +87,8 @@ button:focus-visible {
   font-size: 54px;
   letter-spacing: 0.5px;
   text-align: left;
+    color: var(--ink);
+
 }
 
 #dark-mode-toggle:hover {
@@ -367,7 +389,7 @@ text-decoration: underline;
 /* FOOTER */
 
 .site-footer {
-  background: var(--accent);
+  background: var(--footer);
   color: #fff;
   padding: 60px;
   margin: 0 auto;
@@ -421,7 +443,9 @@ li {
 /* ABOUT */
 
 .about-header{
-  padding: 48px;
+  padding: 24px;              /* match index */
+  max-width: 1100px;          /* same as index */
+  margin: 0 auto;             /* center it */
 }
 
 .about-nav a{
@@ -442,7 +466,7 @@ li {
 .about-title-wrap h1 {
   margin: 0;
   font-family: "Roboto Mono", monospace;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 54px;
   line-height: 0.95;
   letter-spacing: 0.5px;
@@ -482,4 +506,132 @@ li {
 
 
 
+
+/* ABOUT FAQ SECTION */
+/* FAQ SECTION */
+
+.faqs-section {
+  width: 100%;
+  margin: 0;
+}
+
+.faqs-inner {
+  width: 100%;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  background: var(--b8)
+}
+
+/* LEFT SIDE: taller area */
+.faq-display {
+  min-height: 300px; /* makes the orange/title area taller */
+  padding: 20px 28px 20px 48px; /* top right bottom left */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.faqs-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+/* hidden until a tab is opened */
+.faq-answer-panel {
+  display: none;
+  width: 100%;
+}
+
+.faq-answer-content {
+  display: none;
+  max-width: 520px;
+}
+
+.faq-answer-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+/* RIGHT SIDE: short buttons stay short */
+.faq-tabs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-self: start;
+}
+
+.faq-tab {
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--ink);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  height: 140px; /* fixed button height */
+  padding: 10px 12px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* tab colors */
+
+.faq-tab-1 {
+  background: var(--paper);
+}
+
+.faq-tab-2 {
+  background: var(--b1);
+}
+
+.faq-tab-3 {
+  background: var(--b3);
+}
+
+.faq-tab-4 {
+  background: var(--b5);
+}
+
+
+
+/* OPEN STATE */
+.faq-layout.faq-open .faqs-title {
+  display: none;
+}
+
+.faq-layout.faq-open .faq-answer-panel {
+  display: block;
+}
+
+.faq-layout.faq-open .faq-answer-content.active {
+  display: block;
+}
+
+
+body,
+.semester-tab,
+.semester-section,
+.accordion-intro,
+.site-footer,
+.faq-layout,
+.faq-tab,
+a,
+button {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
     
