@@ -17,7 +17,7 @@ function updateThemeButtonLabels(theme) {
   });
 }
 
-/* REAL VERSION: 6 AM / 6 PM */
+/*  6 AM / 6 PM */
 function applyThemeByTime() {
   const currentHour = new Date().getHours();
 
