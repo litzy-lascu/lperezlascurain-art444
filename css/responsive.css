@@ -49,70 +49,84 @@
 
 
 
-    /* accordion overall */
-  .semester-accordion {
-    flex-wrap: wrap;
-    max-width: 100%;
-    min-height: auto;
-  }
+    .semester-accordion {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 420px;
+  width: 100%;
+  max-width: none;
+  min-height: auto;
+}
 
-  /* when nothing is open, intro sits above tabs */
-  .accordion-intro {
-    order: 1;
-    width: 100%;
-    flex: 0 0 100%;
-    min-height: 300px;
-    max-height: 400px;
-  }
+.accordion-intro {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+  min-height: 420px;
+  max-height: none;
+  padding: 48px;
+  box-sizing: border-box;
+}
 
-  .semester-panel {
-    order: 2;
-  }
+.accordion-intro-inner {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+ 
+}
 
-  /* keep tabs vertical on tablet */
-  .semester-tab {
-    width: 67px;
-    min-height: 420px;
-    padding: 12px 0;
-  }
+.accordion-intro-inner p {
+  max-width: 40ch;
+  justify-self: center;
+}
 
-  .semester-tab-title {
-    font-size: 13px;
-  }
+.semester-panel {
+  display: contents;
+}
 
-  .semester-toggle {
-    font-size: 26px;
-  }
+.semester-tab {
+  grid-row: 2;
+  width: 100%;
+  min-height: 420px;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
 
-  .semester-panel.open .semester-content {
-    width: 100%;
-  }
+.semester-section {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+  display: none;
+}
 
-  .semester-inner {
-    min-height: auto;
-    padding: 28px 22px;
-  }
+.semester-panel.open .semester-section {
+  display: block;
+  width: 100%;
+}
 
-  .semester-row-header {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
+.semester-inner {
+  max-width: none;
+  min-height: 420px;
+  padding: 48px;
+  box-sizing: border-box;
+}
 
-  .project-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
+.semester-row-header {
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.project-inner {
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
 
   .site-footer {
     padding: 56px 32px;
     gap: 110px;
   }
-
-.accordion-intro-inner {
-    flex-direction: row;
-  max-width: 700px;
-}
-
 }
 
 
@@ -170,13 +184,23 @@ header#top {
     align-items: center;
   }
 
-  .accordion-intro-inner {
-    max-width: 230px;
-    gap: 24px;
-    text-align: left;
-    flex-direction: column;
-  max-width: 350px;
-  }
+ .accordion-intro-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 100%;
+  text-align: left;
+  align-items: flex-start;
+   padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.accordion-intro-inner p {
+  max-width: 100%;
+  text-align: left;
+}
 
   /* accordion becomes stacked */
   .semester-accordion {
@@ -240,13 +264,41 @@ header#top {
     padding: 18px;
   }
   .semester-row-header{
-    grid-template-columns: 1fr;
-    gap: 0px;
+     display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
   }
+
+  .semester-body {
+  margin-bottom: 36px;
+}
+.semester-projects {
+  gap: 20px;
+}
+
+
   .project-inner{
-    grid-template-columns: 1fr;
-    gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
   }
+
+
+.project {
+  margin-bottom: 32px;
+}
+
+.project-image {
+  margin-top: 10px;
+}
+
+.project-image-inner {
+  margin-bottom: 28px;
+}
+
+.project-description {
+  max-width: none;
+}
 
 .project-description,
 .semester-dates,

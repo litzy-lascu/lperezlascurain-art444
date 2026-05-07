@@ -125,9 +125,23 @@ document.addEventListener("click", event => {
 const mobileSemesterLinks = document.querySelectorAll(".mobile-semester-menu a");
 
 mobileSemesterLinks.forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+
+    const targetId = link.getAttribute("href").replace("#", "");
+    const targetPanel = document.getElementById(targetId);
+
+    if (!targetPanel) return;
+
+    openPanel(targetPanel);
+
     mobileStickyNav.classList.remove("menu-open");
     mobileHamburger.setAttribute("aria-expanded", "false");
+
+    targetPanel.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   });
 });
 
