@@ -45,6 +45,7 @@ function closeAllFaqs() {
 }
 
 faqTabs.forEach((tab, index) => {
+  const toggle = tab.querySelector(".faq-toggle");
   tab.setAttribute("aria-expanded", "false");
 
   tab.addEventListener("click", () => {
@@ -52,6 +53,10 @@ faqTabs.forEach((tab, index) => {
 
     if (isAlreadyOpen) {
       closeAllFaqs();
+      faqTabs.forEach(t => {
+        const tg = t.querySelector(".faq-toggle");
+        if (tg) tg.textContent = "+";
+      });
       return;
     }
 
@@ -61,6 +66,15 @@ faqTabs.forEach((tab, index) => {
     tab.classList.add("active");
     tab.setAttribute("aria-expanded", "true");
     faqAnswers[index].classList.add("active");
+
+    // set all to +
+    faqTabs.forEach(t => {
+      const tg = t.querySelector(".faq-toggle");
+      if (tg) tg.textContent = "+";
+    });
+
+    // set current to -
+    if (toggle) toggle.textContent = "-";
 
     const tabColor = window.getComputedStyle(tab).backgroundColor;
     faqLayout.style.backgroundColor = tabColor;

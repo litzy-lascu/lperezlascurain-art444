@@ -198,16 +198,17 @@ text-decoration: underline;
   margin: 0;
   font-size: 14px;
   line-height: 1.35;
-  color: var(--link);
+  color: var(--ink);
 }
 
 .semester-accordion {
   display: flex;
   align-items: stretch;
   width: 100%;
-  max-width: 1400px;
+  max-width: none;
   margin: 0 0;
   min-height: 600px;
+  overflow: visible;
 }
 
 .semester-accordion.has-open-panel .accordion-intro {
@@ -230,6 +231,16 @@ text-decoration: underline;
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
+  cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+}
+
+.semester-tab:hover {
+  transform: scale(1.08) translateY(-4px);
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .semester-tab-title {
@@ -264,14 +275,14 @@ text-decoration: underline;
   width: 820px;
 }
 
-.semester-panel:nth-child(1) .semester-tab { background: var(--b1); }
-.semester-panel:nth-child(2) .semester-tab { background: var(--b2); }
-.semester-panel:nth-child(3) .semester-tab { background: var(--b3); }
-.semester-panel:nth-child(4) .semester-tab { background: var(--b4); }
-.semester-panel:nth-child(5) .semester-tab { background: var(--b5); }
-.semester-panel:nth-child(6) .semester-tab { background: var(--b6); }
-.semester-panel:nth-child(7) .semester-tab { background: var(--b7); }
-.semester-panel:nth-child(8) .semester-tab { background: var(--b8); }
+.semester-panel:nth-of-type(1) .semester-tab { background: var(--b1); }
+.semester-panel:nth-of-type(2) .semester-tab { background: var(--b2); }
+.semester-panel:nth-of-type(3) .semester-tab { background: var(--b3); }
+.semester-panel:nth-of-type(4) .semester-tab { background: var(--b4); }
+.semester-panel:nth-of-type(5) .semester-tab { background: var(--b5); }
+.semester-panel:nth-of-type(6) .semester-tab { background: var(--b6); }
+.semester-panel:nth-of-type(7) .semester-tab { background: var(--b7); }
+.semester-panel:nth-of-type(8) .semester-tab { background: var(--b8); }
 
 
 
@@ -306,13 +317,13 @@ text-decoration: underline;
 .semester-title {
   font-size: 14px;
   font-weight: 500;
-  color: var(--link);
+  color: var(--ink);
 }
 
 .semester-dates {
   font-size: 14px;
   font-weight: 600;
-  color: var(--link);
+  color: var(--ink);
 }
 
 .semester-header {
@@ -332,7 +343,7 @@ text-decoration: underline;
   list-style: none;
   font-size: 14px;
   font-weight: 600;
-  color: var(--link);
+  color: var(--ink);
   padding-left: 0px;
 }
 
@@ -365,7 +376,7 @@ text-decoration: underline;
 .project-description {
   margin: 0;
   font-size: 14px;
-  color: var(--link);
+  color: var(--ink);
   max-width: 38ch;
 }
 
@@ -451,7 +462,6 @@ li {
 .about-nav a{
   font-size: 16px;
   text-align: right;
-  display: flex;
   justify-content: flex-end;
     color: var(--accent);
       text-decoration: underline;
@@ -587,6 +597,27 @@ li {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-tab:hover {
+  transform: scale(1.08) translateY(-4px);
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.faq-toggle {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+
+  font-size: 28px;
+  line-height: 1;
+  color: var(--ink);
+
+  pointer-events: none; 
 }
 
 /* tab colors */
@@ -635,3 +666,8 @@ button {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
     
+.contour-animation {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}

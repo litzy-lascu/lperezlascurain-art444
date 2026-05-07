@@ -41,9 +41,11 @@ function openPanel(panel) {
   updateAccordionState();
 }
 
-toggleButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const panel = button.closest(".semester-panel");
+const semesterTabs = document.querySelectorAll(".semester-tab");
+
+semesterTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const panel = tab.closest(".semester-panel");
     const isOpen = panel.classList.contains("open");
 
     if (isOpen) {
@@ -132,3 +134,23 @@ mobileSemesterLinks.forEach(link => {
 
 
 updateAccordionState();
+
+const video = document.querySelector(".contour-animation");
+
+let hasPlayed = false;
+
+video.addEventListener("mouseenter", () => {
+  if (!hasPlayed) {
+    video.currentTime = 0;
+    video.play();
+    hasPlayed = true;
+  }
+});
+
+video.addEventListener("ended", () => {
+  video.pause();
+});
+
+video.addEventListener("mouseleave", () => {
+  hasPlayed = false; 
+});
